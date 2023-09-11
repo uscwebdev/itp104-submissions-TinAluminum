@@ -7,6 +7,7 @@
         <style>
 
             #header {
+                background-color: lightblue;
                 background-image: url("img/3d-printer-speed.webp");
                 background-size: cover;
                 background-position: center;
@@ -21,11 +22,19 @@
 
             #main {
                 background-color: antiquewhite;
-                width: 600px;
+                width: 700px;
                 margin-left: auto;
                 margin-right: auto;
                 padding: 15px;
             }
+
+            #footer {
+                background-color: ;
+                text-align: center;
+                color: white;
+                height: 50px;
+                line-height: 50px;
+		    }
 
             .left {
                 float: left;
@@ -45,6 +54,8 @@
             <h1>3D printing</h1>
         </div>
 
+        <!-- header -->
+
         <div id="main">
             
             <h2>What is 3D printing?</h2>
@@ -56,8 +67,25 @@
                   typically layer by layer.
             </p>
 
+            <h2>History of 3D printing</h2>
+            <img class="left" style="width: 160px; height: auto; padding-right: 15px;" src="img/3dprinthistory.webp" alt="first 3D printer">
+            <p>The earliest 3D printer originated in 1981, when Dr. Hideo Kodama invented one of the first 
+                rapid prototyping machines that created parts layer by layer, using a resin that could be 
+                polymerized by UV light. In 1986, the first patent for stereolithography (SLA) was filed by 
+                Chuck Hull, who is considered “the inventor of 3D printing” for creating and commercializing 
+                both SLA and the .stl format - the most common file type used for 3D printing.
+            </p>
+
+            <p>In 1988, Carl Deckard, a student at the University of Texas, licensed selective laser sintering 
+                (SLS) technology - another type of 3D printing that uses a laser to sinter powdered material into 
+                solid structures. Shortly after, in 1989, Scott Crump patented fused deposition modeling (FDM) - 
+                also known as fused filament fabrication (FFF) - and founded Stratasys, one of the main players 
+                in the 3D printing industry to this day. That same year, Hull's company, 3D Systems Corporation, 
+                released the SLA-1 3D printer.
+            </p>
+
             <h2>My experience</h2>
-            <img class="left" style="width: 200px; height: auto; padding: 15px;" src="img/Heart3Dprint.jpg" alt="3D printed heart">
+            <img class="right" style="width: 200px; height: auto; padding-left: 15px; padding-bottom: 15px;" src="img/Heart3Dprint.jpg" alt="3D printed heart">
             <p>The first time I was introduced to 3D printing was when I was in 6th grade. Since then, 3D 
                 printing has become one of my favorite hobbies. I think that everyone should learn how to 
                 use a 3D printer as it is so versatile and helpful in so many ways. The first thing I ever 
@@ -70,13 +98,14 @@
                 part of a 3D printing club, which teaches people about 3D printing. Also, last summer, I learned 
                 how to extract a 3D model from an MRI scan, which can be used to print a life-size model so that 
                 a surgeon can better understand their patient's organ before surgery. 
-            </p>
-
-
-            
-            
+            </p>            
 
         </div>
+
+        <!-- #main -->
+
+        <div id="footer">University of Southern California &copy; 2023</div>
+
         
     </body>
 </html>

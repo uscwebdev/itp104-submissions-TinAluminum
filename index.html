@@ -11,45 +11,78 @@
                 width: auto;
             }
 
+            #main {
+                width: 950px;
+                padding: 200px;
+            }
+
+            #wrapper {
+                display: flex;
+            }
+
+            #left {
+                width: 475px;
+                padding-left: 70px;
+            }
+
+            #right {
+                width: 475px;
+                padding-left: 70px;
+            }
+
         </style>
     </head>
-        <title>PanasKho|Student Page</title>
-        <h1>Panas Kho</h1>
 
-        <hr>
+    <body>
+        <div id="main">
+            <title>PanasKho|Student Page</title>
+            <h1>Panas Kho</h1>
 
-        <p>my email: <a href="mailto:pkhongph@usc.edu">pkhongph@usc.edu</a></p>
-        <p>My favorite color is <strong>Green</strong></p>
-        <a target="_blank" href="https://tetris.com/play-tetris">My favorite website</a>
-        <p>My favorite activity</p>
-        <img src="img/yoyo.jpg" alt="Yoyo picture">
 
-        <hr>
+            <p>my email: <a href="mailto:pkhongph@usc.edu">pkhongph@usc.edu</a></p>
+            <hr>
+            <div id="wrapper">
 
-        <p>Class I'm enrolled in:</p>
-        <ol>
-            <li>BME 423</li>
-            <li>EE 202</li>
-            <li>BISC 220</li>
-            <li>MUSC 114</li>
-            <li>ITP 104</li>
-        </ol>
+                <div id="left">
+                    <p>Favorite color: <strong>Green</strong></p>
+                    <p>Favorite website: <a target="_blank" href="https://tetris.com/play-tetris">Tetris</a></p>
+                    <p>Favorite activity</p>
+                    <img src="img/yoyo.jpg" alt="Yoyo picture">
+                </div>
+                
+                <div id="right">
+                    <p>Class I'm enrolled in:</p>
+                    <ol>
+                        <li>BME 423</li>
+                        <li>EE 202</li>
+                        <li>BISC 220</li>
+                        <li>MUSC 114</li>
+                        <li>ITP 104</li>
+                    </ol>
+                </div>
+            </div>
 
-        <hr>
-        
-        <p>Assigmnets:</p>
-        <ul>
-            <li><a href="assignment_1/resume.html"> Assignment 1</a></li>
-            <li><a href="assignment_2/hobbies.html" > Assignment 2</a></li>
-        </ul>
+            <hr>
+            
+            <div id="wrapper">
+                <div id="left">
+                <p>Assigmnets:</p>
+                    <ul>
+                        <li><a href="assignment_1/resume.html"> Assignment 1: Web Resume</a></li>
+                        <li><a href="assignment_2/hobbies.html" > Assignment 2: 3D printing</a></li>
+                    </ul>
+                </div>
 
-        <hr>
-
-        <p>Labs:</p>
-        <ul>
-            <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
-            <li><a target="_blank" href="Lab 3/resume copy.html">Lab 3: Updated Resume</a></li>
-        </ul>
-        </ul>
+                <div id="right">
+                    <p>Labs:</p>
+                    <ul>
+                        <li><a target="_blank" href="index.html">Lab 2: Student Page</a></li>
+                        <li><a target="_blank" href="Lab 3/resume copy.html">Lab 3: Updated Resume</a></li>
+                        <li><a href="index.html">Lab 4: Updated student page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
     
 </html>

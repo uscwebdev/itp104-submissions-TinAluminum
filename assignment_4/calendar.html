@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>Calendar | Assignment 4</title>
+
+    <head>
+        
+        <style>
+            #header {
+                background-image: url("img/mountain_wallpaper.jpg");
+                background-size: cover;
+                background-position: center;
+
+                text-align: center;
+                font-size: 30px;
+                height: 500px;
+                line-height: 500px;
+                color: antiquewhite;
+                text-shadow: 0px 0px 10px black;
+            }
+
+            #main {
+                width: 1100px;
+                background-color: bisque;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #calendar {
+                width: 1100px;
+            }
+
+            .not-in-month {
+                color: darkgray;
+            }
+
+            .weekday {
+                height: 40px;
+                text-align: center;
+            }
+
+            td {
+                height: 100px;
+                width: 100px;
+                text-align: left;
+                vertical-align: top;
+            }
+        
+            table, tr, th, td {
+                border-collapse: collapse;
+                border: 1px solid;
+                border-color: black;
+            }
+
+            #birthday {
+                background-image: url("img/doge_birthday.png");
+                background-size: 160px 150px;
+            }
+
+            #new-year {
+                background-image: url("img/doge_new_year.jpg");
+                background-size: 160px 150px;
+            }
+
+            #work {
+                background-image: url("img/doge_working.png");
+                background-size: 160px 150px;
+            }
+
+            #chilling {
+                background-image: url("img/doge_chilling.png");
+                background-size: 160px 150px;
+            }
+
+            .events-text {
+                font-size: 15px;
+                color: white;
+                text-align: center;
+                background: rgba(57, 35, 35, 0.5);
+                padding: 10px;
+                border-radius: 40px;
+
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Janurary 2010</h1>
+        </div>
+
+        <div id="main">
+            <table id="calendar">
+                <tr>
+                    <th class="weekday">Sunday</th>
+                    <th class="weekday">Monday</th>
+                    <th class="weekday">Tuesday</th>
+                    <th class="weekday">Wednesday</th>
+                    <th class="weekday">Thursday</th>
+                    <th class="weekday">Friday</th>
+                    <th class="weekday">Saturday</th>
+                </tr>
+                <tr>
+                    <td class="not-in-month">27</td>
+                    <td class="not-in-month">28</td>
+                    <td class="not-in-month">29</td>
+                    <td class="not-in-month">30</td>
+                    <td class="not-in-month">31</td>
+                    <td id="new-year">1 <p class="events-text">New year</p></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td id="chilling">6<p class="events-text">Doge gave up on new year Resolution day</p></td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td id="work">11 <p class="events-text">Doge work day</p></td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td id="birthday">21<p class="events-text">Doge birthday</p></td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td class="not-in-month">1</td>
+                    <td class="not-in-month">2</td>
+                    <td class="not-in-month">3</td>
+                    <td class="not-in-month">4</td>
+                    <td class="not-in-month">5</td>
+                    <td class="not-in-month">6</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lab 6 | Gallery</title>
+
+        <style>
+
+            @import url('https://fonts.cdnfonts.com/css/doge-sans');
+
+            #header {
+                color: aliceblue;
+                font-size: 30px;
+                text-align: center;
+                font-family: "Doge Sans", sans-serif;
+                padding-bottom: 40px;
+            }
+
+            #content {
+                display: flex;
+                justify-content: center;
+                /* padding-top: 320px; */
+            }
+
+            .img-container > p {
+                text-align: center;
+                visibility: hidden;
+                font-size: 20px;
+                font-family: "Doge Sans", sans-serif;
+                color: aliceblue;
+            }
+
+            .img-container img:hover + p {
+                visibility: visible;
+            }
+            .img-container img:hover{
+                padding: 20px 20px 0px 20px;
+            }
+
+            img {
+                height: 200px;
+                width: auto;
+            }
+
+            body {
+                background-image: url("img/doge_in_space.jpg");
+                background-size: cover;
+                
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Doge pics</h1>
+        </div>
+
+        <div id="content">
+            <div class="img-container">
+                <img src="img/pic1.jpg" alt="Doge pic1">
+                <p>Doge pic</p>
+            </div>
+            <div class="img-container">
+                <img src="img/pic2.jpg" alt="Doge pic2">
+                <p>Doge meme template</p>
+            </div>
+            <div class="img-container">
+                <img src="img/pic3.jpg" alt="Doge pic3">
+                <p>Doge happy got cake</p>
+            </div>
+            <div class="img-container">
+                <img src="img/pic4.jpg" alt="Doge pic4">
+                <p>Doge but bread</p>
+            </div>
+            <div class="img-container">
+                <img src="img/pic5.webp" alt="Doge pic5">
+                <p>Doge slep</p>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </body>
+</html>

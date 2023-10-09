@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>PanasKho|Hobbies</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css">
+
+        <style>
+
+        @font-face {
+			src: url("font.ttf");
+			font-family: "Goth";
+		    }
+
+            #header {
+                background-color: lightblue;
+                background-image: url("img/3d-printer-speed.webp");
+                background-size: cover;
+                background-position: center;
+                color: orange;
+                text-shadow: 0px 0px 10px black;
+                font-size: 30px;
+                font-family: "Goth", sans-serif;
+
+                height: 500px;
+                text-align: center;
+                line-height: 500px;
+            }
+
+            #side-bar {
+                display: flex;
+                background-color: rgb(220, 189, 147);
+                align-items: flex-end;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            #japanese-font {
+                font-family: 'Noto Sans JP', sans-serif;
+            }
+
+            .side-bar-img {
+                width: 200px;
+                height: auto;
+                padding: 20px;
+                padding-bottom: 0px;
+            }
+
+            .side-bar-img-txt {
+                margin-left: auto;
+                margin-right: auto;
+                font-style: italic;
+            }
+
+            .left {
+                float: left;
+            }
+
+            .right {
+                float: right;
+            }
+
+            .img-container > p {
+                text-align: center;
+                visibility: hidden;
+                font-size: 15px;
+                font-family: "Doge Sans", sans-serif;
+                color: aliceblue;
+            }
+
+            .img-container img:hover + p {
+                visibility: visible;
+            }
+            .img-container img:hover{
+                padding: 20px 20px 0px 20px;
+            }
+
+
+
+            
+
+
+        </style>
+    </head>
+
+    <body style="background-color: lightblue;">
+
+        <div id="header">
+            <h1 style="padding: 0px;">3D printing</h1>
+        </div>
+        <!-- header -->
+
+        <div id="navbar">
+            <a id="highlight-nav" href="hobbies.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+
+        <div id="main-container">
+
+            <div id="side-bar">
+                <div class="img-container">
+                    <img class="side-bar-img" src="img/printer_printing_gear.png" alt="printer printing gear">
+                    <p class="side-bar-img-txt">3D printing gears</p>
+                </div>
+                <div class="img-container">
+                    <img class="side-bar-img" src="img/printing_toys.jpg" alt="Printing toys">
+                    <p class="side-bar-img-txt">3D printing toys</p>
+                </div>
+                <div class="img-container">
+                    <img class="side-bar-img" src="img/Cover-ranking-5.jpg" alt="3D print bird nest and suff">
+                    <p class="side-bar-img-txt">3D printed bird nest and keychains</p>
+                </div>
+
+            </div>
+
+            <div id="main">
+                
+                <h2>What is 3D printing?</h2>
+                <img class="right" src="img/Robot_3D_print_timelapse_on_RepRapPro_Fisher.gif" alt="3D printing gif">
+                <p id="japanese-font">3D プリンティングまたは積層造形は、次元オブジェクトの構築です
+                    CAD モデルまたはデジタル 3D モデルから。様々な工程で実現可能です
+                    コンピュータ制御下で材料が堆積、結合、または固化される。
+                    一緒に追加される材料 (溶融されるプラスチック、液体、または粉末粒子など)、
+                    通常は層ごとに行われます。
+                </p>
+
+                <h2>History of 3D printing</h2>
+                <img class="left" style="width: 160px; height: auto; padding-right: 15px;" src="img/3dprinthistory.webp" alt="first 3D printer">
+                <p>The earliest 3D printer originated in 1981, when Dr. Hideo Kodama invented one of the first 
+                    rapid prototyping machines that created parts layer by layer, using a resin that could be 
+                    polymerized by UV light. In 1986, the first patent for stereolithography (SLA) was filed by 
+                    Chuck Hull, who is considered “the inventor of 3D printing” for creating and commercializing 
+                    both SLA and the .stl format - the most common file type used for 3D printing.
+                </p>
+
+                <p>In 1988, Carl Deckard, a student at the University of Texas, licensed selective laser sintering 
+                    (SLS) technology - another type of 3D printing that uses a laser to sinter powdered material into 
+                    solid structures. Shortly after, in 1989, Scott Crump patented fused deposition modeling (FDM) - 
+                    also known as fused filament fabrication (FFF) - and founded Stratasys, one of the main players 
+                    in the 3D printing industry to this day. That same year, Hull's company, 3D Systems Corporation, 
+                    released the SLA-1 3D printer.
+                </p>
+
+                <h2>My experience</h2>
+                <img class="right" style="width: 200px; height: auto; padding-left: 15px; padding-bottom: 15px;" src="img/Heart3Dprint.jpg" alt="3D printed heart">
+                <p>The first time I was introduced to 3D printing was when I was in 6th grade. Since then, 3D 
+                    printing has become one of my favorite hobbies. I think that everyone should learn how to 
+                    use a 3D printer as it is so versatile and helpful in so many ways. The first thing I ever 
+                    printed was a Pokemon model I downloaded from the internet. 3D printing also got me to learn 
+                    about 3D design and CAD early on, which allowed me to design so many cool things. One time, 
+                    I helped design and print a handle for a giant air cannon for my club in high school. 
+                </p>
+
+                <p>Not only is 3D printing a fun hobby, but it has also helped me in my career. Currently, I'm a 
+                    part of a 3D printing club, which teaches people about 3D printing. Also, last summer, I learned 
+                    how to extract a 3D model from an MRI scan, which can be used to print a life-size model so that 
+                    a surgeon can better understand their patient's organ before surgery. 
+                </p>            
+
+            </div>
+
+
+        <!-- #main -->
+        </div>
+
+        <div id="footer">University of Southern California &copy; 2023</div>
+
+        
+    </body>
+</html>

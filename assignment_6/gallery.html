@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Updated interest page Gallery | ITP 104</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <style>
+
+            #header {
+                background-color: lightblue;
+                background-image: url("img/gallery_background.jpg");
+                background-size: cover;
+                background-position: center;
+                color: orange;
+                text-shadow: 0px 0px 10px black;
+                font-size: 30px;
+
+                height: 300px;
+                text-align: center;
+                line-height: 300px;
+            }
+
+            #collage-container {
+                width: 1000px;
+                height: 760px;
+                /* background-color: cadetblue; */
+                margin: 50px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .small-img-container {
+                width: 230px;
+                height: 170px;
+                margin: 10px;
+                background-color: cornflowerblue;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .medium-img-container {
+                width: 480px;
+                height: 170px;
+                margin: 10px;
+                background-color: burlywood;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .long-img-container {
+                width: 730px;
+                height: 170px;
+                margin: 10px;
+                background-color: darkgray;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .small-img-container > .width-100, .medium-img-container > .width-100, .long-img-container > .width-100 {
+			    width: 100%;
+			    height: auto;
+                
+		    }
+
+            .small-img-container > .height-100, .medium-img-container > .height-100, .long-img-container > .height-100 {
+			    height: 100%;
+                width: auto;
+                
+		    }
+
+            .overlay {
+                position: absolute;
+                top: 0px;	
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #FFF;
+                text-align: center;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                visibility: hidden;
+
+		    }
+
+
+            .small-img-container:hover > .overlay, .medium-img-container:hover > .overlay, .long-img-container:hover > .overlay {
+                visibility: visible;
+            }
+           
+
+            
+
+
+            
+
+
+            
+        </style>
+
+    </head>
+
+    <body style="background-color: lightblue;">
+
+        <div id="header">
+            <h1 style="padding: 0px;">Gallery</h1>
+        </div>
+
+        <div id="navbar">
+            <a href="hobbies.html">Home</a>
+            <a id="highlight-nav" href="gallery.html">Gallery</a>
+        </div>
+
+        <div id="main-container">
+            <div id="collage-container">
+
+                <div class="medium-img-container">
+                    <img class="width-100" src="gallery_pic/medium1.jpg">
+                    <div class="overlay">Campus center</div>
+                </div>
+
+                <div class="small-img-container">
+                    <img class="height-100" src="gallery_pic/pic1.webp">
+                    <div class="overlay">Campus center</div>
+                </div>
+
+                <div class="small-img-container">
+                    <img class="width-100" src="gallery_pic/pic2.webp">
+                    <div class="overlay">Campus center</div>
+                </div>
+
+                
+                
+
+                <div class="small-img-container">
+                    
+                </div>
+
+                <div class="long-img-container">
+                    
+                </div>
+
+                <div class="long-img-container">
+                    
+                </div>
+
+                
+
+                <div class="small-img-container">
+                    
+                </div>
+
+                <div class="small-img-container">
+                    
+                </div>
+
+                <div class="small-img-container">
+                    
+                </div>
+
+                <div class="medium-img-container">
+                    
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

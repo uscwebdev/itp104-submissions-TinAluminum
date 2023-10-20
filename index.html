@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>PanasKho|Student Page</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <style>
             strong {
                 background-color: greenyellow;
@@ -13,7 +16,7 @@
             }
 
             #main {
-                width: 950px;
+                width: 900px;
                 padding: 200px;
             }
 
@@ -29,6 +32,21 @@
             #right {
                 width: 475px;
                 padding-left: 70px;
+            }
+
+            @media (max-width: 767px) {
+                
+
+                #wrapper {
+                    width: auto;
+				    flex-direction: column;
+				    border: none;
+                }
+
+                #main {
+                width: 500px;
+                padding: 1px;
+            }
             }
 
         </style>

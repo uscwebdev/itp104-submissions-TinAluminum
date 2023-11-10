@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 10 | ITP 104</title>
+        <style>
+            .Gallery {
+                width: 400px;
+                height: 400px;
+                background-color: aquas;
+                
+            }
+
+            .Gallery:hover > #img1{
+                transform: rotate(70deg);
+                transition: transform 500ms;
+                transform-origin: bottom left;
+            }
+
+            .Gallery:hover > #img2{
+                transform: rotate(45deg);
+                transition: transform 500ms;
+                transform-origin: bottom left;
+            }
+
+            .Gallery:hover > #img3{
+                transform: rotate(20deg);
+                transition: transform 500ms;
+                transform-origin: bottom left;
+            }
+
+            #img1 {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                /* left: 400px */
+            }
+
+            #img2 {
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top: 0;
+                left: 0;
+               
+            }
+
+            #img3 {
+                width: 400px;
+                height: 400px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            #img1, #img2, #img3 {
+                border: solid;
+                border-color: grey;
+            }
+
+            #main {
+                width: 800px;
+                height: 800px;
+                background-color: bisque;
+            }
+
+
+            
+
+        </style>
+    </head>
+    <body id="main">
+        <div class="Gallery">
+            <img id="img1" src="img/doge.webp" alt="Doge">
+            <img id="img2" src="img/bread.jpeg" alt="Bread">
+            <img id="img3" src="img/coin.jpeg" alt="Coin">
+        </div>
+    </body>
+</html>

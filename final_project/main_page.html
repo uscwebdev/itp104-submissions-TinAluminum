@@ -3,8 +3,32 @@
     <head>
         <title>Portfolio | Panas Kho</title>
         <link rel="stylesheet" href="main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            #profile-pic-container {
+                width: 50%;
+                height: 700px;
+                /* background-color: #1E6091; */
+                text-align: center;
+                align-items: center;
+            }
 
+            #profile-pic {
+                width: 60%;
+                display:block;
+                margin:auto;
+            }
+
+            #two-column {
+                display: flex;
+                width: 100%;
+                
+            }
+
+            #intro {
+                width: 50%;
+                font-size: 2em;
+            }
         </style>
     </head>
 
@@ -14,6 +38,24 @@
             <a class="link" href="resume.html">Resume</a>
             <a class="link" href="projects.html">Projects</a>
         </div>
-        <h1>Panas Kho</h1>
+
+        <h1>Portfolio</h1>
+
+        <div id="two-column">
+            <div id="profile-pic-container">
+                <img id="profile-pic" src="img/doge.jpg"> 
+            </div>
+            <div id="intro">
+                <p>
+                    Hi! My name is Panas, and I'm currently an Undergraduate studying 
+                    Biomedical Engineer at University of Southern California. (WILL PUT PROFILE PIC IN LATER)
+                </p>
+
+            </div>
+        </div>
+        
+
+        </div>
+
     </body>
 </html>

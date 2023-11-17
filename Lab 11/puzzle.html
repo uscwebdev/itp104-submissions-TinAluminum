@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Puzzle | ITP 104 Lab 7</title>
+        <style>
+
+            #head {
+                text-align: center;
+
+            }
+
+            #main {
+                display: flex;
+                width: 675px;
+                height: 675px;
+                flex-wrap: wrap;
+                background-color: antiquewhite;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #main-body {
+                background-color: antiquewhite;
+            }
+
+            .img-container {
+                width: 225px;
+                height: 225px;
+                background-color: antiquewhite;
+                position: relative;
+                /* border: 2px dotted; */
+            }
+
+            #row1-col1 {
+                position: relative;
+                bottom: 20px;
+                right: 20px;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+            
+            #row1-col3 {
+                position: relative;
+                left: 10px;
+                box-shadow: 5px 5px 5px 5px grey
+            }
+
+            #row2-col1 {
+                position: relative;
+                right: 10px;
+                bottom: 20px;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+
+            #row3-col1 {
+                position: relative;
+                right: 30px;
+                box-shadow: 5px 5px 5px 5px grey
+            }
+
+            #row3-col3 {
+                position: relative;
+                right: 30px;
+                bottom: 20px;
+                box-shadow: 5px 5px 5px 5px grey;
+            }
+
+            .movable {
+                
+                cursor: move;
+            }
+
+        </style>
+    </head>
+    <body id="main-body">
+        <div id="head">
+            <h1>Doge puzzle</h1>
+        </div>
+
+        <div id="main">
+
+            <!-- 1 1:1 --> 
+            <div id="row1-col1" class="img-container movable">
+                <img src="puzzle_img/row-1-column-1.png" alt="Doge puzzle row 1 col 1">
+            </div>
+
+            <!-- 2 1:2 -->
+            <div class="img-container movable">
+                <img src="puzzle_img/row-1-column-2.png" alt="Doge puzzle row 1 col 2">
+            </div>
+
+            <!-- 3 1:3 -->
+            <div id="row1-col3" class="img-container movable">
+                <img src="puzzle_img/row-1-column-3.png" alt="Doge puzzle row 1 col 3">
+            </div>
+
+            <!-- 4 2:1 -->
+            <div id="row2-col1" class="img-container movable">
+                <img src="puzzle_img/row-2-column-1.png" alt="Doge puzzle row 2 col 1">
+            </div>
+
+            <!-- 5 2:2 -->
+            <div class="img-container movable">
+                <img src="puzzle_img/row-2-column-2.png" alt="Doge puzzle row 2 col 2">
+            </div>
+
+            <!-- 6 2:3 -->
+            <div class="img-container movable">
+                <img src="puzzle_img/row-2-column-3.png" alt="Doge puzzle row 2 col 3">
+            </div>
+
+            <!-- 7 3:1 -->
+            <div id="row3-col1" class="img-container movable">
+                <img src="puzzle_img/row-3-column-1.png" alt="Doge puzzle row 3 col 1">
+            </div>
+
+            <!-- 8 3:2 -->
+            <div class="img-container movable">
+                <img src="puzzle_img/row-3-column-2.png" alt="Doge puzzle row 3 col 2">
+            </div>
+
+            <!-- 9 3:3 -->
+            <div id="row3-col3" class="img-container movable">
+                <img src="puzzle_img/row-3-column-3.png" alt="Doge puzzle row 3 col 3">
+            </div>
+
+        </div>
+
+        <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
+
+        <script>
+            var draggableDiv = document.querySelectorAll(".movable")
+
+            draggableDiv.forEach(function (element) {
+                new Draggabilly(element);
+            });
+
+
+        </script>   
+
+    </body>
+</html>

@@ -21,7 +21,35 @@
                 border-radius: 30px;
                 border: solid;
                 border-color: #90E0EF;
+                overflow: hidden;
+                position: relative;
+                /* position: absolute; */
             }
+
+            .projects-page img {
+                width:100%; height:100%;
+                object-fit: contain;
+                
+            }
+
+            .overlay {
+                text-align: center;
+                visibility: hidden;
+                position: absolute;
+                top: 0px;	
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.4);
+                font-size: 2em;
+                
+            }
+
+            .projects-page:hover > .overlay {
+                visibility: visible;
+            }
+
+            
 
         </style>
     </head>
@@ -36,15 +64,18 @@
 
         <div id="projects-gallery">
             <div class="projects-page">
-
+                <img src="img/candy_box.png" alt="candy box">
+                <div class="overlay">3D printed candy box with trash container</div>
             </div>
 
             <div class="projects-page">
-
+                <img src="img/parametric_box.png" alt="paremetric box">
+                <div class="overlay">3D printed parametric box</div>
             </div>
 
             <div class="projects-page">
-
+                <img src="img/EV dust cap.png" alt="EV dust cap">
+                <div class="overlay">J1772 EV dust cap</div>
             </div>
 
             <div class="projects-page">

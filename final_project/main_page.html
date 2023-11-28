@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             #profile-pic-container {
-                width: 50%;
-                height: 700px;
+                width: 40%;
+                height: 600px;
                 /* background-color: #1E6091; */
                 text-align: center;
                 align-items: center;
@@ -21,14 +21,59 @@
 
             #two-column {
                 display: flex;
-                width: 100%;
+                width: 100%;   
+            }
+
+
+            #intro {
+                display: grid;
+	            align-items: center;
+                width: 50%;
+                font-size: 2em;
+                /* text-align: center; */
+                /* align-items: center; */
+            }
+
+            #skills {
+                flex-wrap: nowrap;
+            }
+
+            .dark-slide {
+                background-color: #023E8A;
+            }
+
+            .light-slide {
+                background-color: #0096C7;
+            }
+
+            .row {
+                display: flex;
+                /* flex-wrap: wrap; */
                 
             }
 
-            #intro {
-                width: 50%;
-                font-size: 2em;
+            .four-column-element {
+                background-color: #48CAE4;
+                width: 24%;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 30px;
             }
+
+            .four-column-element h2 {
+                text-align: center;
+                
+            }
+
+            .three-column-element {
+                background-color: #48CAE4;
+                width: 30%;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 30px;
+            }
+            
+
         </style>
     </head>
 
@@ -41,21 +86,117 @@
 
         <h1>Portfolio</h1>
 
-        <div id="two-column">
+        <div id="two-column" class="dark-slide">
             <div id="profile-pic-container">
                 <img id="profile-pic" src="img/doge.jpg"> 
             </div>
             <div id="intro">
                 <p>
-                    Hi! My name is Panas, and I'm currently an Undergraduate studying 
-                    Biomedical Engineer at University of Southern California. (WILL PUT PROFILE PIC IN LATER)
+                    Hi! My name is Panas, and welcome to my portfolio!
                 </p>
 
             </div>
         </div>
-        
+
+        <div class="light-slide"></div>
+
+            <h1>About me</h1>
+            <p>
+                I'm currently an undergraduate student studying Biomedical Engineering at University of 
+                Southern California. I am interested in 3D printing, CAD, robotics, programing, and Machine Learning.
+            </p>
+            <img src="img/USCLogo.png" alt="usc logo" style="transform: scale(0.5); text-align: center;">
+            
 
         </div>
+
+        <div class="dark-slide">
+             
+            <h1>Skills</h1>
+            <div id="skills" class="row">
+                <div class="four-column-element">
+                    <h2>3D Printing/CAD</h2>
+                    <ul>
+                        <li>Fusion 360</li>
+                        <li>Worked with FDM and SLA</li>
+                    </ul>
+                </div>
+                <div class="four-column-element">
+                    <h2>Programming</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                        <li>R</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Swift</li>
+
+                    </ul>
+                </div>
+                <div class="four-column-element">
+                    <h2>Engineering</h2>
+                    <ul>
+                        <li>Statistical analysis</li>
+                        <li>Circuit design with OpAmp</li>
+                        <li>Designing mechanical parts</li>
+                    </ul>
+                </div>
+                <div class="four-column-element">
+                    <h2>Language</h2>
+                    <ul>
+                        <li>Thai (Native)</li>
+                        <li>English (Fluent)</li>
+                        <li>Janapese (Intermediate)</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="dark-slide">
+            <h1>Experiences</h1>
+            <div class="three-column-element">
+                <h2>3D4E at USC</h2>
+                <h3>Financial chair (August 2023 - Present)</h3>
+                <ul>
+                    <li>Keep track of club's budget</li>
+                    <li>Collecting member dues</li>
+                    <li>Order parts and equipments for the club</li>
+                </ul>
+                <h3>Lab Technician (September 2022 - Present)</h3>
+                <ul>
+                    <li>Maintaining the 3D printing lab</li>
+                    <li>Create individual research about 3D printing teqhniques and methods</li>
+                </ul>
+            </div>
+            <div class="three-column-element">
+                <h2>TOM at USC</h2>
+                <h3>Team lead: Project Natalie (August 2023 - Present)</h3>
+                <ul>
+                    <li>Create portable dog poop collector for people with full leg and partial arm disability</li>
+                </ul>
+                <h3>Team member: Project Wes (August 2023 - Present)</h3>
+                <ul>
+                    <li>Design a helper device for people with leg injury to drive automotive vehicle </li>
+                </ul>
+                <h3>Team member: Project Marriam</h3>
+                <ul>
+                    <li>Design a tool that help a Mother with Multiple scerosis to hold her newborn</li>
+                </ul>
+            </div>
+            <div class="three-column-element">
+                <h2>Apollo Chorus at USC</h2>
+                <h3>Baritone section singer (January 2023 - May 2023)</h3>
+                <ul>
+                    <li>Sang in an all male chorus</li>
+                </ul>
+            </div>
+            
+           
+        </div>
+
+       
 
     </body>
 </html>

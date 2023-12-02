@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             #profile-pic-container {
-                width: 40%;
+                width: 500px;
                 height: 600px;
                 /* background-color: #1E6091; */
                 text-align: center;
@@ -14,9 +14,10 @@
             }
 
             #profile-pic {
-                width: 60%;
+                width: 400px;
                 display:block;
                 margin:auto;
+                border-radius: 30px;
             }
 
             #two-column {
@@ -38,12 +39,9 @@
                 flex-wrap: nowrap;
             }
 
-            .dark-slide {
-                background-color: #023E8A;
-            }
-
             .light-slide {
-                background-color: #0096C7;
+                /* background-color: #0096C7; */
+                text-align: center;
             }
 
             .row {
@@ -52,12 +50,17 @@
                 
             }
 
+            #experience {
+                flex-wrap: nowrap;
+            }
+
             .four-column-element {
-                background-color: #48CAE4;
+                background-color: #0096C7;
                 width: 24%;
                 padding: 20px;
                 margin: 20px;
                 border-radius: 30px;
+                border-style: solid;
             }
 
             .four-column-element h2 {
@@ -66,11 +69,45 @@
             }
 
             .three-column-element {
-                background-color: #48CAE4;
+                background-color: #0077B6;
                 width: 30%;
                 padding: 20px;
                 margin: 20px;
                 border-radius: 30px;
+                border-style: solid;
+            }
+
+            @media (max-width: 767px) {
+                .row {
+                    flex-wrap: wrap;
+                }
+
+                #skills {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                #experience {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .four-column-element {
+                background-color: #0096C7;
+                width: 300px;
+                }
+
+                .three-column-element {   
+                width: 300px;
+                justify-content: center;
+                }
+
+                #profile-pic {
+                    width: 300px;
+                    display:block;
+                    margin:auto;
+                }
+                
             }
             
 
@@ -84,11 +121,11 @@
             <a class="link" href="projects.html">Projects</a>
         </div>
 
-        <h1>Portfolio</h1>
+        <h1 style="padding: 10px;">Portfolio</h1>
 
         <div id="two-column" class="dark-slide">
             <div id="profile-pic-container">
-                <img id="profile-pic" src="img/doge.jpg"> 
+                <img id="profile-pic" src="img/pf.jpg"> 
             </div>
             <div id="intro">
                 <p>
@@ -100,19 +137,19 @@
 
         <div class="light-slide"></div>
 
-            <h1>About me</h1>
-            <p>
+            <h1 style="text-align: center;">About me</h1>
+            <p style="text-align: center; font-size: 20px;">
                 I'm currently an undergraduate student studying Biomedical Engineering at University of 
                 Southern California. I am interested in 3D printing, CAD, robotics, programing, and Machine Learning.
             </p>
-            <img src="img/USCLogo.png" alt="usc logo" style="transform: scale(0.5); text-align: center;">
+            <img src="img/USCLogo.png" alt="usc logo" style="transform: scale(0.5); margin-left: auto; margin-right: auto;">
             
 
         </div>
 
         <div class="dark-slide">
              
-            <h1>Skills</h1>
+            <h1 style="text-align: center;">Skills</h1>
             <div id="skills" class="row">
                 <div class="four-column-element">
                     <h2>3D Printing/CAD</h2>
@@ -154,8 +191,11 @@
 
         </div>
 
-        <div class="dark-slide">
-            <h1>Experiences</h1>
+        <h1 style="text-align: center;">Experiences</h1>
+
+        <div id="experience" class="row">
+            
+            
             <div class="three-column-element">
                 <h2>3D4E at USC</h2>
                 <h3>Financial chair (August 2023 - Present)</h3>
